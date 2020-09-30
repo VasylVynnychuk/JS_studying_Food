@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Timer
 
-    const deadline = '2020-09-30';
+    let deadline = '2020-09-30';
 
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -82,9 +82,14 @@ window.addEventListener('DOMContentLoaded', () => {
             hours.innerHTML = getZero(t.hours);
             minutes.innerHTML = getZero(t.minutes);
             seconds.innerHTML = getZero(t.seconds);
-
+            
             if (t.total <= 0) {
                 clearInterval(timeInterval);
+                
+                days.innerHTML = getZero(0);
+                hours.innerHTML = getZero(0);
+                minutes.innerHTML = getZero(0);
+                seconds.innerHTML = getZero(0);
             }
         }
     }
