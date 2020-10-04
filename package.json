@@ -1,0 +1,22 @@
+{
+  "name": "foodapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VasylVynnychuk/JS_studying_Food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VasylVynnychuk/JS_studying_Food/issues"
+  },
+  "homepage": "https://github.com/VasylVynnychuk/JS_studying_Food#readme",
+  "devDependencies": {
+    "json-server": "^0.16.2"
+  }
+}
